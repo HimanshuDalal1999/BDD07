@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 12 10:38:23 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12856 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ExecutableClasses.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: ExecutableClasses.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Practice button", "Validating Rahul Shetty Application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at Pages.PomClass.VerifyPracticeButton(PomClass.java:31)
+	at ExecutableClasses.StepDefinition.UserclicksonPracticebutton(StepDefinition.java:38)
+	at ✽.User clicks on Practice button(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1816073816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816073816'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at Pages.PomClass.VerifyPracticeButton(PomClass.java:31)
+	at ExecutableClasses.StepDefinition.UserclicksonPracticebutton(StepDefinition.java:38)
+	at ✽.User clicks on Practice button(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>ExecutableClasses.RunnerClass@48075da3</td></tr>
+<tr>
+<td title='ExecutableClasses.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: ExecutableClasses.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logo", "Validating Rahul Shetty Application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at Pages.PomClass.VerifyLogo(PomClass.java:25)
+	at ExecutableClasses.StepDefinition.UserisabletoseetheLogooftheApplication(StepDefinition.java:31)
+	at ✽.User is able to see the Logo of the Application(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace311765759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311765759'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
+	at Pages.PomClass.VerifyLogo(PomClass.java:25)
+	at ExecutableClasses.StepDefinition.UserisabletoseetheLogooftheApplication(StepDefinition.java:31)
+	at ✽.User is able to see the Logo of the Application(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:5)
+</pre></div></td>
+<td>4</td>
+<td>ExecutableClasses.RunnerClass@48075da3</td></tr>
+</table><p>
+</body>
+</html>

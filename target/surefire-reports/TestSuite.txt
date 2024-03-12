@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.17 s <<< FAILURE! -- in TestSuite
+ExecutableClasses.RunnerClass.runScenario["Verify Logo", "Validating Rahul Shetty Application"](1) -- Time elapsed: 4.507 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at Pages.PomClass.VerifyLogo(PomClass.java:25)
+	at ExecutableClasses.StepDefinition.UserisabletoseetheLogooftheApplication(StepDefinition.java:31)
+	at ✽.User is able to see the Logo of the Application(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:5)
+
+ExecutableClasses.RunnerClass.runScenario["Verify Practice button", "Validating Rahul Shetty Application"](2) -- Time elapsed: 0.134 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at Pages.PomClass.VerifyPracticeButton(PomClass.java:31)
+	at ExecutableClasses.StepDefinition.UserclicksonPracticebutton(StepDefinition.java:38)
+	at ✽.User clicks on Practice button(file:///F:/eclipse/eclipse/ATT%2019%20August%20class/BehavDrivenDev_Framework07/src/test/resources/FeatureFile/RahulSheety.feature:8)
+
